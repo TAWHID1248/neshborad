@@ -1,0 +1,7 @@
+<!-- templates/dashboard/order_history.html -->
+<h1>Your Orders</h1>
+<ul>
+    {% for order in orders %}
+        <li>Order placed on {{ order.order_date }} - Status: {{ order.order_status }}</li>
+    {% endfor %}
+</ul>

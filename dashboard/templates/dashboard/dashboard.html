@@ -1,0 +1,10 @@
+<!-- templates/dashboard/dashboard.html -->
+<h1>Dashboard Overview</h1>
+<p>Sales Target: {{ sales_target }}</p>
+<p>Revenue: {{ revenue }}</p>
+<p>Top Products: {{ top_products }}</p>
+<ul>
+    {% for alert in alerts %}
+        <li>{{ alert }}</li>
+    {% endfor %}
+</ul>

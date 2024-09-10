@@ -1,0 +1,12 @@
+<!-- templates/dashboard/payment_gateways.html -->
+<h1>Payment Gateways</h1>
+<ul>
+    {% for gateway in gateways %}
+        <li>
+            <h3>{{ gateway.name }}</h3>
+            <p>Access Info: {{ gateway.access_info }}</p>
+            <p><a href="{{ gateway.setup_guide_link }}">Setup Guide</a></p>
+            <p>{{ gateway.troubleshooting_guide }}</p>
+        </li>
+    {% endfor %}
+</ul>

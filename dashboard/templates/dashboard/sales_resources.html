@@ -1,0 +1,11 @@
+<!-- templates/dashboard/sales_resources.html -->
+<h1>Sales and Marketing Resources</h1>
+<ul>
+    {% for resource in resources %}
+        <li>
+            <h3>{{ resource.title }}</h3>
+            <p>{{ resource.content }}</p>
+            <a href="{{ resource.link_to_tool }}">Learn More</a>
+        </li>
+    {% endfor %}
+</ul>
